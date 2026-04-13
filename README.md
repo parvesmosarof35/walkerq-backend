@@ -70,8 +70,8 @@ npm run dev
 
 
 
-#  PS C:\New folder\spark-tech\ecommarce-raphm18\ecommarce-backend> cd src
-# PS C:\New folder\spark-tech\ecommarce-raphm18\ecommarce-backend\src> tree
+#  PS C:\New folder\spark-tech\walkerq\walkerq-backend> cd src
+# PS C:\New folder\spark-tech\walkerq\walkerq-backend\src> tree
 # Folder PATH listing
 # Volume serial number is 88E7-76FD
 # C:.
@@ -84,28 +84,25 @@ npm run dev
 # │   ├───middlewares
 # │   ├───modules
 # │   │   ├───auth
-# │   │   ├───blogs
-# │   │   ├───cart
-# │   │   ├───collections
-# │   │   ├───contact
+# │   │   ├───batch
+# │   │   ├───dashboardstats
 # │   │   ├───faq
+# │   │   ├───issue_report
+# │   │   ├───luggage
+# │   │   ├───notification
 # │   │   ├───order
 # │   │   ├───payment
-# │   │   ├───products
-# │   │   ├───reviews
+# │   │   ├───rack
 # │   │   ├───settings
-# │   │   ├───user
-# │   │   └───wishlists
+# │   │   └───user
 # │   ├───routes
 # │   ├───shared
+# │   ├───socket
 # │   └───utils
 # │       └───emailcontext
 # └───public
 #     └───images
-# PS C:\New folder\spark-tech\ecommarce-raphm18\ecommarce-backend\src>
-
-
-
+# PS C:\New folder\spark-tech\walkerq\walkerq-backend\src>
 
 ```
 
@@ -146,12 +143,9 @@ src/
 │   ├── helper/         # Helper functions
 │   ├── interface/      # TypeScript interfaces
 │   ├── middlewares/    # Express middlewares
-│   ├── modules/        # Feature modules
-│   │   ├── auth/       # Authentication
-│   │   ├── products/   # Product management
-│   │   ├── order/      # Order processing
-│   │   └── ...         # Other modules
+│   ├── modules/        # Feature modules (Auth, Luggage, Batch, etc.)
 │   ├── routes/         # Route definitions
+│   ├── socket/         # Real-time synchronization logic
 │   └── utils/          # Utility functions
 └── server.ts           # Application entry point
 ```
