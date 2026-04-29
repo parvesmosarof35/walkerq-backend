@@ -8,6 +8,7 @@ import OrderRoutes from "../modules/order/order.routes";
 import { DashboardRoutes } from "../modules/dashboardstats/dashboard.router";
 import IssueReportRoutes from "../modules/issue_report/issue_report.routes";
 import LuggageRoutes from "../modules/luggage/luggage.routes";
+import { InventoryRoutes } from "../modules/inventory/inventory.routes";
 
 const router = express.Router();
 
@@ -47,6 +48,10 @@ const moduleRoutes = [
   {
     path: "/luggage",
     route: LuggageRoutes,
+  },
+  {
+    path: "/inventory",
+    route: InventoryRoutes,
   },
 ];
 
